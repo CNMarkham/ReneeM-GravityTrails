@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwable : MonoBehaviour
 {
+    public Text collectableCounter;
     public GameObject objectThrown;
     public Vector3 offset;
     public int throwableCounter;
@@ -12,13 +14,22 @@ public class Throwable : MonoBehaviour
         
     }
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Collectable")
         {
             throwableCounter++;
+            collectableCounter.text = throwableCounter.ToString();
             Destroy(collision.gameObject);
         }
+    }
+
+    
+
+    private void DestroyThrowable()
+    {
+        Destroy(gameObject);
     }
 
 
