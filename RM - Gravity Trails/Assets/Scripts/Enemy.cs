@@ -34,6 +34,12 @@ public class Enemy : MonoBehaviour
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidBody.AddForce(jumpForce);
         }
+        if(collision.gameObject.tag == "Collectable")
+        {
+            Destroy(transform.gameObject);
+
+        }
+
     }
     private void FixedUpdate()
     {
