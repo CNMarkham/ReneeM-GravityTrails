@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Enemy : MonoBehaviour
     public float yDirection;
     private Rigidbody2D enemyRigidBody;
     public float speed;
+    public Text collectableCounter;
+    public int throwableCounter;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,10 +40,11 @@ public class Enemy : MonoBehaviour
         if(collision.gameObject.tag == "Collectable")
         {
             Destroy(transform.gameObject);
-
+            throwableCounter--;
+            collectableCounter.text = throwableCounter.ToString();
         }
-
     }
+
     private void FixedUpdate()
     {
         /*
