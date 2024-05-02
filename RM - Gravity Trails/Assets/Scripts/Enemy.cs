@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Text collectableCounter;
     public int throwableCounter;
+    public Teleport enemycount;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,14 +38,17 @@ public class Enemy : MonoBehaviour
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidBody.AddForce(jumpForce);
         }
-        if(collision.gameObject.tag == "Collectable")
+        if(collision.gameObject.tag == "ThrowingObject")
         {
-            Destroy(transform.gameObject);
-            throwableCounter--;
-            collectableCounter.text = throwableCounter.ToString();
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            enemycount.enemyCount--;
+            //collectableCounter.text = throwableCounter.ToString();
         }
     }
 
+
+    
     private void FixedUpdate()
     {
         /*

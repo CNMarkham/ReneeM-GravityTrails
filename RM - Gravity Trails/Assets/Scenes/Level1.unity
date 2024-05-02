@@ -1358,7 +1358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.7, y: 186}
+  m_AnchoredPosition: {x: -467.56122, y: 222.81793}
   m_SizeDelta: {x: 68.6857, y: 70.613}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &649765606
@@ -2243,6 +2243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139369440}
     m_Modifications:
+    - target: {fileID: 6215786028907695799, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
+      propertyPath: enemycount
+      value: 
+      objectReference: {fileID: 644108317}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.76
@@ -2516,7 +2520,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.465162, y: 2.2778287, z: -15}
+  m_LocalPosition: {x: -11.0852585, y: 2.2776084, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2779,6 +2783,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139369440}
     m_Modifications:
+    - target: {fileID: 6215786028907695799, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
+      propertyPath: enemycount
+      value: 
+      objectReference: {fileID: 644108317}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.05497
@@ -3107,6 +3115,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139369440}
     m_Modifications:
+    - target: {fileID: 6215786028907695799, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
+      propertyPath: enemycount
+      value: 
+      objectReference: {fileID: 644108317}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.0649695
@@ -4211,6 +4223,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139369440}
     m_Modifications:
+    - target: {fileID: 6215786028907695799, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
+      propertyPath: enemycount
+      value: 
+      objectReference: {fileID: 644108317}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.92
@@ -4732,6 +4748,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139369440}
     m_Modifications:
+    - target: {fileID: 6215786028907695799, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
+      propertyPath: enemycount
+      value: 
+      objectReference: {fileID: 644108317}
     - target: {fileID: 6777840510841117077, guid: 4145e24d86112a6418667d26a41589f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.11503
@@ -5223,7 +5243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330.1388, y: 200.18207}
+  m_AnchoredPosition: {x: -528, y: 237}
   m_SizeDelta: {x: 45.8953, y: 45.1402}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!212 &2104162080
