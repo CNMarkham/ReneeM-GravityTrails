@@ -15,11 +15,12 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Text collectableCounter;
     public int throwableCounter;
-    public Teleport enemycount;
+    public GameObject portal;
     // Start is called before the first frame update
     void Start()
     {
         enemyRigidBody = GetComponent<Rigidbody2D>();
+        portal = GameObject.Find("Portal");
     }
 
     // Update is called once per frame
@@ -40,9 +41,10 @@ public class Enemy : MonoBehaviour
         }
         if(collision.gameObject.tag == "ThrowingObject")
         {
+            portal.GetComponent<Teleport>().enemyCount--;
             Destroy(gameObject);
             Destroy(collision.gameObject);
-            enemycount.enemyCount--;
+            
             //collectableCounter.text = throwableCounter.ToString();
         }
     }
