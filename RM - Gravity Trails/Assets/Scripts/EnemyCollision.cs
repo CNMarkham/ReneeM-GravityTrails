@@ -14,7 +14,7 @@ public class EnemyCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
     // Update is called once per frame
