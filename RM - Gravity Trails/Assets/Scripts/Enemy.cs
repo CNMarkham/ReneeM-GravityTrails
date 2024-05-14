@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -47,6 +48,10 @@ public class Enemy : MonoBehaviour
             
             //collectableCounter.text = throwableCounter.ToString();
         }
+       // if (collision.gameObject.tag == "Player" && enemyCount == 0)
+        //{
+        //    SceneManager.LoadScene(1);
+       // }
     }
 
 
