@@ -17,7 +17,7 @@ public class Teleport2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && enemyCount == 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
     // Update is called once per frame
